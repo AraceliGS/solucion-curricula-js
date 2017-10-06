@@ -1,0 +1,52 @@
+Programa Cajero Automático
+
+atm  := [{ amount: 100, quantity: 100 }, { amount: 50, quantity: 50 }, { amount: 20, quantity: 200 },
+{ amount: 10, quantity: 300 }, { amount: 5, quantity: 500 }, { amount: 1, quantity: 800 }];
+
+Función getCash (amount)
+// Comentario: Amount es el monto que el usuario a ingresado 
+   caja := Saldo del usuario
+
+// Comentario: Si es if, && es y y o es ||
+   Si caja <= 0 y amount > caja y no hay billetes con denominación Entonces
+   retornar 'No hay saldo en caja' o 'Saldo insuficiente' o 'No contamos con billetes con denominación'
+
+   Si no Entonces 
+   // Comentario: Para es for
+
+     Para(i := 0; i < atm.length; i++) Entonces
+     //Comentario: qBills es la cantidad de billetes, pero sumQbills es la cantidad final de billetes a retornar
+     sumQbills := 0
+     quantityMax := quantity[i]
+     qBills := parseInt(amount/quantityMax)
+     rest := amount - (quantityMax*qBills)
+     rest := amount
+     sumQbills := sumQbills + qBills
+        
+        Si resto <= 0 Entonces
+        // Comentario: return es retornar
+           retornar sumQbills
+
+        Fin Si
+
+      Fin Para
+    
+    Fin Si
+  
+  Fin Función
+
+Fin Programa Cajero Automático
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
