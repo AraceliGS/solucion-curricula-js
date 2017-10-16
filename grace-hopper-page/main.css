@@ -1,0 +1,16 @@
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.biography {
+  width: 72%;
+  display: inline-block;
+  line-height: 1.6;
+}
+
+.summary {
+
+  display: inline-block;
+  vertical-align: top;
+}
